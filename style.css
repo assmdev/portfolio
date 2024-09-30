@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+#nav{
+  background-image: linear-gradient(to right, rgb(244 244 244), rgb(231 231 231), rgb(133 133 133), rgb(92 89 88));
+  box-shadow: rgba(0, 0, 0, 0.103) 0px 0px 20px 6px;
+}
+
+
+/* home */
+#home{
+  background: url(https://static.vecteezy.com/ti/vecteur-libre/p1/2331914-3d-noir-et-blanc-step-studio-room-blank-background-for-display-product-exhibition-minimal-design-vectoriel.jpg) center / cover no-repeat ;
+  height: 100vh;
+  width: 100%;
+}
+
+#home .container {
+  position: relative;
+  height: 100%; /* div need height */
+}
+#home img {
+  max-width: 100%;
+  height:auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#home .def {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#home .def a:hover{
+  transition: 0.3s ease-in-out;
+  transform: translateY(5px);
+}
+
+/* my skills*/
+
+.skill .progress {
+  height: 15px;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #dfdfdf;
+  box-shadow: none;
+}
+.skill .progress-bar {
+  background-color: #212121;
+}
+
+/* service */
+#service {
+  position: relative; /* to position img*/
+  padding-top: 220px;/*to put img in this space*/
+}
+
+#service::before {
+  content: ''; /* like a empty div/span */
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ac9jbLxLBYlZUlPTBanWg-GgSp-c8Z7dsA&s) center / cover no-repeat fixed ;
+  width: 100%;
+  height: 400px; 
+  position: absolute; /* to position img*/
+  left: 0;
+  top: 0;
+  filter: opacity(50%);
+}
+
+#service .container {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+/* portfolio */
+#portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item {
+  height: 280px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+}
+
+.portfolio-item:before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 0.25s ease-in-out;
+}
+.portfolio-item:hover:before {
+  background-color: rgba(33, 33, 33, 0.6);
+}
+
+.portfolio-item-info { /* project title & icon link*/
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out; /*to show and move them to left when hover*/
+}
+.portfolio-item:hover .portfolio-item-info {
+  left: 50px;
+  opacity: 1;
+}
+
+.portfolio-item-info a {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 6px 7px 4px;
+  color: #fff;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+.portfolio-item-info a:hover {
+  color: #212121;
+  background-color: #fff;
+}
+
+/* my stat section */
+.my-stat {
+  background: url(https://t4.ftcdn.net/jpg/09/60/79/97/360_F_960799749_ur6Jvh2CaSyOuzewVJPmQbbYdyVZLJAf.jpg) center / cover no-repeat fixed ;
+  width: 100%;
+  position: relative;
+}
+
+.my-stat::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+.my-stat .info{
+  z-index: 999;
+  color: white;
+}
+
+/* contact */
+
+#contact .info-item i {
+  color: grey;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid grey;
+  transition: all 0.3s ease-in-out;
+}
+#contact .info-item i:hover{
+  background-color: gray;
+  color: white;
+}
+#contact .info-wrap {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+}
+
+/* Form */
+#contact{
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(102, 102, 102));
+}
+#contact .form-control {
+  border: 0;
+  box-shadow:0px 1px 2px rgb(0, 0, 0);
+  background-color: transparent;
+  transition: 0.8s ease-in-out;
+}
+#contact .form-control:focus{
+  border: 1px solid rgb(83, 83, 83);
+}
+#contact textarea {
+  min-height: 200px;
+  resize: none;
+}
+
+/* footer */
+footer .social-links a {
+  color: black;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+footer .social-links a:hover{
+  transform: translateY(5px);
+}
+

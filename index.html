@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio Assm</title>
+  <!-- boots link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- font link -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slider link -->
+  <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+  <!-- fading effect link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-md" id="nav">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end fs-5" id="navbarTogglerDemo02">
+          <ul class="navbar-nav nav-underline text-uppercase mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true">
+
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="def col-md-6">
+            <h1 class="fs-1 fw-bold text-uppercase">Assmaa Chrouh</h1>
+            <div>
+              <p class="job-title fs-5 my-4">Full Stack Developer</p>
+              <a href="#contact" class="btn btn-dark me-2">Hire me</a>
+              <a href="#portfolio" class="btn btn-secondary">Explore more</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://png.pngtree.com/png-vector/20240101/ourmid/pngtree-hijab-for-muslim-woman-template-mockup-white-background-png-image_11399750.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="text-center py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-9">
+            <h2 class="fs-1 text-uppercase py-5">About</h2>
+
+            <p class="fs-5 mb-5">
+              Hello! I'm Assmaa, a full stuck developer, an enthusiast, and a
+              girl slighty obsessed for code quality. I'm currently available
+              for freelance work. If you have a project that you want to get
+              started or think you need my help with something, then get in
+              touch.
+            </p>
+            <a href="#" class="btn btn-dark text-uppercase fw-semibold" target="_blank" download="">Download my cv</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="fs-1 text-uppercase py-5">My Skills</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="skill mt-5">
+              <h4 class="text-uppercase fs-4">Html/css</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" style="width: 100%"
+                  data-aos="fade-right"></div>
+                <!--progress-bar-->
+              </div>
+            </div>
+            <div class="skill mt-5">
+              <h4 class="text-uppercase fs-4">Bootstrap</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" style="width: 75%"
+                  data-aos="fade-right"></div>
+                <!--progress-bar-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill mt-5">
+              <h4 class="text-uppercase fs-4">Javascript</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="82" style="width: 82%"
+                  data-aos="fade-right"></div>
+                <!--progress-bar -->
+              </div>
+            </div>
+            <div class="skill mt-5">
+              <h4 class="text-uppercase fs-4">Python</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="66" style="width: 66%"
+                  data-aos="fade-right"></div>
+                <!--progress-bar -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill mt-5">
+              <h4 class="text-uppercase fs-4">My sql</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="97" style="width: 97%"
+                  data-aos="fade-right"></div>
+                <!--progress-bar-->
+              </div>
+            </div>
+            <div class="skill mt-5">
+              <h4 class="text-uppercase fs-4">Php</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" style="width: 45%"
+                  data-aos="fade-right"></div>
+                <!--progress-bar-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="text-center">
+      <div class="container p-5" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="fs-1 text-uppercase py-5">What i do</h3>
+          </div>
+          <div class="col-md-4">
+            <div>
+              <i class="fa-solid fa-desktop fs-1" style="color: #000000;"></i>
+              <h4 class="fs-4 my-4 fw-bold">Front-end</h4>
+              <p>
+                As a Front-end developer, I have experience in HTML5 and CSS3
+                techniques working with jQuery or more advanced javascript
+                frameworks such as angular
+              </p>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div>
+              <i class="fa-solid fa-server fs-1" style="color: #000000;"></i>
+              <h4 class="fs-4 my-4 fw-bold">Back-end</h4>
+              <p>
+                Utilising php frameworks such as Zend or creating bespoke
+                code, I've written services supporting thousands of users,
+                including REST APIs, e-learning applications and more.
+              </p>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div>
+              <i class="fa-solid fa-swatchbook fs-1" style="color: #000000;"></i>
+              <h4 class="fs-4 my-4 fw-bold">Web Design</h4>
+              <p>
+                I'im also passionate for creating compellig and visually appealing websites.As well as possessing
+                excellent communication and project management skills.
+                .
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5" data-aos="fade-up">
+      <div class="container mb-4">
+        <div class="text-center">
+          <h3 class="fs-1 text-uppercase py-5">My recent Works</h3>
+        </div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="portfolio-item">
+                  <img
+                    src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/83ffaad6a73bad1cfb169ce7bb38d1547329fafffee3c326623408b07de96eb21638782414475.jpg" />
+                  <div class="portfolio-item-info">
+                    <h4 class="text-light mb-2 fw-bold">Nonprofit </h4>
+                    <a href="#" title="More Details">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="portfolio-item">
+                  <img
+                    src="https://images.websitebuilderexpert.com/wp-content/uploads/2023/04/04083952/Screenshot-2023-02-13-at-09.16.54.png" />
+                  <div class="portfolio-item-info">
+                    <h4 class="text-light mb-2 fw-bold">Ecommerce</h4>
+                    <a href="#" title="More Details">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="portfolio-item">
+                  <img src="https://lirp.cdn-website.com/a8ff2f1c/dms3rep/multi/opt/1007187-640w.png" />
+                  <div class="portfolio-item-info">
+                    <h4 class="text-light mb-2 fw-bold">gallery</h4>
+                    <a href="#" title="More Details">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="my-stat py-5 my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="info col-sm-4 col-xs-12">
+            <p class="display-1 fw-light start counting">01</p>
+            <h4 class="mt-4">Years Experience</h4>
+          </div>
+          <div class="info col-sm-4 col-xs-12">
+            <p class="display-1 fw-light start counting">02</p>
+            <h4 class="mt-4">Projects Delivered</h4>
+          </div>
+          <div class="info col-sm-4 col-xs-12">
+            <p id="infinity" class="display-1 fw-light">00</p>
+            <h4 class="mt-4">Clients</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="text-center pb-5" data-aos="fade-up">
+      <div class="container">
+        <h3 class="fs-1 text-uppercase py-5">Contact</h3>
+        <div class="info-wrap row g-4 ps-4 pb-3 my-3">
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3 class="fw-bold fs-4 mb-2">Address</h3>
+                <p class="ms-3">Belvédère, Casablanca</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="fa-solid fa-phone me-2"></i>
+              <div>
+                <h3 class="fw-bold fs-4 mb-2">Call</h3>
+                <p class="ms-2">+212 6 16 06 92 14</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="fa-solid fa-envelope me-2"></i>
+              <div>
+                <h3 class="fw-bold fs-4 mb-2">Email</h3>
+                <p class="ms-2">c-assmaa@live.fr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="myForm" method="post" target="_blank" novalidate>
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="text" id="username" name="name" class="form-control mt-4" placeholder="Name" required />
+              <span id="usernameError" style="color: rgb(150, 0, 0);"></span>
+            </div>
+            <div class="col-sm-6">
+              <input type="email" id="email" name="email" class="form-control mt-4" placeholder="Email" required />
+              <span id="emailError" style="color: rgb(150, 0, 0);"></span>
+            </div>
+            <div class="col-sm-12">
+              <input type="text" id="subject" name="subject" class="form-control mt-4" placeholder="Subject" required />
+              <span id="subjectError" style="color: rgb(150, 0, 0);"></span>
+            </div>
+            <div class="col-sm-12">
+              <textarea name="message" id="message" class="form-control mt-4" placeholder="Message" required></textarea>
+              <span id="msgError" style="color: rgb(150, 0, 0);"></span>
+            </div>
+          </div>
+          <button href="#" class="btn btn-dark fw-semibold mt-4 px-sm-5" type="submit">
+            Send Message
+            <i class="fa-solid fa-paper-plane ps-1" style="color: #ffffff;"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="py-3" style=" background-color:#686868;border-top: 1px solid grey;">
+    <div class="container">
+      <h4 class="text-center pb-3">Get in Touch</h4>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="fa-brands fa-facebook fs-4 pe-4"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram fs-4 pe-4"></i></a>
+        <a href=""><i class="fa-brands fa-github fs-4 pe-4"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin fs-4"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- fading effect script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- initialize AOS for it to work : -->
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- slider script -->
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <!-- initialize slider to work : -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 3, // show 3 img item in page
+        perMove: 1, // slide 1 img item every time 
+        gap: '2rem', // betwen img item
+        breakpoints: {  // for responsiv (instead of row > col-sm-4) 
+          640: {
+            perPage: 2,
+            gap: '.7rem',
+          },
+          480: {
+            perPage: 1,
+            gap: '.7rem',
+          },
+        },
+      });
+      splide.mount();
+    });
+  </script>
+
+  <!--form validation -->
+
+  <script>
+
+    let myForm = document.getElementById("myForm");
+    myForm.addEventListener("submit", function (event) {
+      let isValid = true;
+
+      // Clear previous error messages
+      var nameError = document.getElementById("usernameError");
+      nameError.textContent = "";
+      var emailError = document.getElementById("emailError");
+      emailError.textContent = "";
+        var subjectError = document.getElementById("subjectError");
+      subjectError.textContent = "";
+        var msgError = document.getElementById("msgError");
+      msgError.textContent = "";
+
+      // Validate username
+      const username = document.getElementById("username").value;
+      if (username.trim() === '') {
+        nameError.textContent = "Username is required.";
+        isValid = false;
+      }
+
+      // Validate email
+      const email = document.getElementById("email").value;
+      if (!isValidEmail(email)) {
+        emailError.textContent = "Please enter a valid email address.";
+        isValid = false;
+      }
+
+        // Validate subject
+      const subject = document.getElementById("subject").value;
+      if (subject === "") {
+        subjectError.textContent = "subject is required.";
+        isValid = false;
+      }
+
+        // Validate msg
+      const message = document.getElementById("message").value;
+      if (message === "") {
+        msgError.textContent = "message is required.";
+        isValid = false;
+      }
+
+
+      // Prevent form submission if invalid
+      if (!isValid) {
+        event.preventDefault();
+      }
+    });
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+</script>
+
+</body>
+
+</html>
